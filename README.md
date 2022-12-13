@@ -10,8 +10,8 @@
 
 ## 使用方式
 
-1. 导入 `PMysql.jar`
-2. `import` 引入
+1. 导入 `PMysql.jar`（VSCode 直接将 `.jar` 文件放到 `lib` 文件夹中即可）
+2. 使用 `import` 引入
 
     ```java
     import top.apee.PMysql.PMysql;
