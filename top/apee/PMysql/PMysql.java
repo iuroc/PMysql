@@ -6,6 +6,7 @@ import java.sql.*;
  * 数据库操作类
  * 
  * @author 欧阳鹏
+ * @version 1.12.14
  */
 public class PMysql {
     /**
