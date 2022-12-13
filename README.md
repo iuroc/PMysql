@@ -32,6 +32,23 @@
     pmysql.connect();
     ```
 
+- 创建表
+
+    ```java
+    pmysql.executeUpdate("CREATE TABLE IF NOT EXISTS `my_table` (`id` INT PRIMARY KEY)");
+    ```
+
+- 插入数据
+
+    ```java
+    int num = pmysql.executeUpdate("INSERT INTO `apee_test` VALUES (1)");
+    if (num > 0) {
+        System.out.println("插入成功");
+    } else {
+        System.out.println("插入失败");
+    }
+    ```
+
 - 执行 SELECT 查询
 
     ```java
@@ -53,7 +70,7 @@
     // 字符串
     String string = (String) mysql.getValue(resultSet, "title");
     // 数字
-    int age = (int) pmysql.getValue(resultSet, "age");
+    int age = (int) pmysql.getValue(resultSet, "id");
     ```
 
   - 获取所有

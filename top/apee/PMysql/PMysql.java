@@ -69,21 +69,21 @@ public class PMysql {
     }
 
     /**
-     * 执行 SQL 查询，适用于 {@code INSERT} {@code UPDATE} {@code DELETE}
+     * 执行 SQL 查询，适用于 {@code INSERT} {@code UPDATE} {@code DELETE} {@code CREATE} 等
      * 
      * @param sql SQL 语句
-     * @return {@code 0} 表示失败，{@code 1} 表示成功
+     * @return 返回成功执行的条数
      */
     public int executeUpdate(String sql) {
         Statement statement = null;
-        int result = 0;
+        int num = 0;
         try {
             statement = this.connection.createStatement();
-            result = statement.executeUpdate(sql);
+            num = statement.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return result;
+        return num;
     }
 
     /**
