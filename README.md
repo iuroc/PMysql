@@ -76,9 +76,18 @@
   - 获取所有
 
     ```java
+    ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
     while (pmysql.result.next(resultSet)) {
         String string = (String) pmysql.getValue(resultSet, "title");
         System.out.println(string);
+    }
+    ```
+
+    ```java
+    ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
+    while (pmysql.result.next(resultSet)) {
+        int id = (int) pmysql.getValue(resultSet, "id");
+        System.out.println(id);
     }
     ```
 

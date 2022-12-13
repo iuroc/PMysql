@@ -13,14 +13,10 @@ public class MysqlTest {
         pmysql.database = "ponconsoft";
         // 连接到数据库
         pmysql.connect();
-        // 创建表
-        pmysql.executeUpdate("CREATE TABLE IF NOT EXISTS `apee_test` (`id` INT PRIMARY KEY)");
-        // 插入数据
-        int num = pmysql.executeUpdate("INSERT INTO `apee_test` VALUES (1)");
-        if (num > 0) {
-            System.out.println("插入成功");
-        } else {
-            System.out.println("插入失败");
+        ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
+        while (pmysql.result.next(resultSet)) {
+            int id = (int) pmysql.getValue(resultSet, "id");
+            System.out.println(id);
         }
     }
 }
