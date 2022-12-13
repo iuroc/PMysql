@@ -65,3 +65,11 @@
     }
     ```
 
+## Jar 包制作流程
+
+```bash
+# 编译代码
+javac -d . "top/apee/PMysql/PMysql.java"
+# 生成 jar 文件
+jar -cvf PMysql.jar "top/apee/PMysql"
+```

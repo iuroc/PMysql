@@ -1,4 +1,4 @@
-package top.apee.PMysqlDev;
+package top.apee.PMysql;
 
 import java.sql.*;
 
