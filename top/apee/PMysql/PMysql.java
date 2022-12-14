@@ -105,17 +105,15 @@ public class PMysql {
     }
 
     /**
-     * {@code SELECT} 查询结果
+     * {@code SELECT} 查询结果操作子类
      */
-    public Result result = new Result();
-
-    public class Result {
+    public static class Result {
         /**
          * 游标移动到下一条记录
          * 
          * @param resultSet SQL 查询结果
          */
-        public boolean next(ResultSet resultSet) {
+        public static boolean next(ResultSet resultSet) {
             try {
                 return resultSet.next();
             } catch (SQLException e) {

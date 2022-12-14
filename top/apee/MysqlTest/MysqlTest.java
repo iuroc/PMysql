@@ -14,7 +14,7 @@ public class MysqlTest {
         // 连接到数据库
         pmysql.connect();
         ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
-        while (pmysql.result.next(resultSet)) {
+        while (PMysql.Result.next(resultSet)) {
             int id = (int) pmysql.getValue(resultSet, "id");
             System.out.println(id);
         }

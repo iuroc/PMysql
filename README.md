@@ -58,7 +58,7 @@
 - 游标移动
 
     ```java
-    pmysql.result.next(resultSet);
+    PMysql.Result.next(resultSet);
     ```
 
 - 获取查询结果的内容
@@ -66,7 +66,7 @@
 
     ```java
     // 移动游标到下一条记录
-    pmysql.result.next(resultSet);
+    PMysql.Result.next(resultSet);
     // 字符串
     String string = (String) mysql.getValue(resultSet, "title");
     // 数字
@@ -77,7 +77,7 @@
 
     ```java
     ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
-    while (pmysql.result.next(resultSet)) {
+    while (PMysql.Result.next(resultSet)) {
         String string = (String) pmysql.getValue(resultSet, "title");
         System.out.println(string);
     }
@@ -85,7 +85,7 @@
 
     ```java
     ResultSet resultSet = pmysql.executeQuery("SELECT * FROM `apee_test`");
-    while (pmysql.result.next(resultSet)) {
+    while (PMysql.Result.next(resultSet)) {
         int id = (int) pmysql.getValue(resultSet, "id");
         System.out.println(id);
     }
