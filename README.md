@@ -10,7 +10,7 @@
 
 ## 使用方式
 
-1. 导入 [`PMysql.jar`](https://github.com/oyps/PMysql/releases/download/1.12.14/PMysql-1.12.14.jar)（VSCode 直接将 `.jar` 文件放到 `lib` 文件夹中即可）
+1. 导入 [`PMysql.jar`](https://github.com/oyps/PMysql/releases/download/1.12.14/PMysql-1.12.14.jar) 和 [`mysql-connector-java.jar`](https://github.com/oyps/PMysql/releases/download/1.12.14/mysql-connector-java-8.0.30.jar)（VSCode 直接将 `.jar` 文件放到 `lib` 文件夹中即可）
 2. 使用 `import` 引入
 
     ```java
