@@ -1,9 +1,9 @@
-package top.apee.MysqlTest;
+package Test;
 
 import java.sql.*;
 import top.apee.PMysql.PMysql;
 
-public class MysqlTest {
+public class Main {
     public static void main(String[] args) {
         // 创建数据库操作对象
         PMysql pmysql = new PMysql();
