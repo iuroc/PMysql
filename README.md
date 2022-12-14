@@ -58,7 +58,7 @@
 - 游标移动
 
     ```java
-    pmysql.resultNext(resultSet);
+    pmysql.result.next(resultSet);
     ```
 
 - 获取查询结果的内容
@@ -66,7 +66,7 @@
 
     ```java
     // 移动游标到下一条记录
-    pmysql.resultNext(resultSet);
+    pmysql.result.next(resultSet);
     // 字符串
     String string = (String) mysql.getValue(resultSet, "title");
     // 数字
